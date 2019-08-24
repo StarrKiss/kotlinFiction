@@ -18,7 +18,7 @@ object Store{
 
         var inventoryMap = mutableMapOf(
                 "rustSword" to item("Rusty Sword", "sword", 3),
-                "basicarmor" to item ("Wooden Armor", "armor", 3),
+                "basicArmor" to item ("Wooden Armor", "armor", 3),
                 "healthPotion" to item("Health Potion", "potion", 50)
 
         )
@@ -47,7 +47,7 @@ object Store{
                 return tempText
         }
         fun addInvList(keyOfItem: String){
-               inventoryMap.put(keyOfItem, possibleInventory.get(keyOfItem)?:error("Value doesnt exist")
+               inventoryMap.put(keyOfItem, possibleInventory.get(keyOfItem)?:error("Value doesn't exist")
                )
         }
 

@@ -42,6 +42,7 @@ class Section(tempText: String, commandArray : Array<Command>, itemAdded : Strin
                     tempInput = ""
                     println("Press enter to continue ")
                     tempInput = readLine()
+
                     call()
 
                 }
