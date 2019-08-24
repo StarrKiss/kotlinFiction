@@ -42,8 +42,7 @@ class Section(tempText: String, commandArray : Array<Command>, itemAdded : Strin
                 }
             }
             else if(tempInput == "Inventory"){
-                inventory.open()
-
+                inventory.open(text, commands)
             }
             else{
                 println("Invalid enter.")

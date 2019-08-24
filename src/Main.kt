@@ -1,7 +1,11 @@
 
 import Player
 
+
 import Store
+
+import  animation
+
 fun main(){
     println("Welcome! What is your name? ")
     var tempInput = readLine()
@@ -13,6 +17,10 @@ fun main(){
     }
 
     println("You chose the name " + Player.getPlayerName())
+
+    //animation(2, arrayOf(":)", ":(", ":|")).playAnim()
+
+
 
     Store.getItem("text1").call()
 }

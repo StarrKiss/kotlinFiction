@@ -3,6 +3,8 @@ object Player{
 
     var health : Int = 100
 
+    var equippedSword : String = "rustSword"
+
     fun getPlayerName() : String{
 
         return name
@@ -16,6 +18,14 @@ object Player{
         return health
     }
 
+    fun equipSword(key : String){
+        equippedSword = key
+
+        println("Sword equipped - " + Store.getInvItem(key).itemName)
+    }
+
+
+
     fun Heal(healthIncrement : Int){
         health += healthIncrement
         println("You healed up!")
@@ -25,4 +35,6 @@ object Player{
         health = health - healthIncrement
         println("Health decreased")
     }
+
+    // Health: (000000000...)
 }

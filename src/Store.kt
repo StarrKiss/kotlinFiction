@@ -33,6 +33,7 @@ object Store{
 
 
 
+
         fun getItem(item : String) : Section{
             return storeMap.get(item)?:error("Value does not exist")
         }
@@ -49,6 +50,11 @@ object Store{
         fun addInvList(keyOfItem: String){
                inventoryMap.put(keyOfItem, possibleInventory.get(keyOfItem)?:error("Value doesn't exist")
                )
+        }
+
+        fun getInvItem(key: String): item{
+                return inventoryMap.get(key)?:error("Value does not exist")
+
         }
 
 
