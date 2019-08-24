@@ -2,6 +2,7 @@ import java.util.Arrays
 import Command
 import Player
 import Store
+import inventory
 
 class Section(tempText: String, commandArray : Array<Command>, itemAdded : String = "null") {
     var text : String = tempText
@@ -31,22 +32,23 @@ class Section(tempText: String, commandArray : Array<Command>, itemAdded : Strin
             var tempInput = readLine()
 
             println("You chose " + tempInput)
-
-            loop@ for(x in commands){
-                if(tempInput == x.finalText){
-                    x.callNextSec()
-                    break@loop
-                }
-                else if(tempInput == "Inventory"){
-                   print( Store.getIinvList())
-                    tempInput = ""
-                    println("Press enter to continue ")
-                    tempInput = readLine()
-
-                    call()
+            if(tempInput != "Inventory"){
+                loop@ for(x in commands){
+                    if(tempInput == x.finalText){
+                        x.callNextSec()
+                        break@loop
+                    }
 
                 }
             }
+            else if(tempInput == "Inventory"){
+                inventory.open()
+
+            }
+            else{
+                println("Invalid enter.")
+            }
+
 
         }
 
