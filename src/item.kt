@@ -7,7 +7,6 @@ class item(name : String, itemType : String, strength : Int) {
 
     var whatItem = itemType
 
-
     fun List() : String{
 
         var tempText : String = ""
@@ -19,8 +18,6 @@ class item(name : String, itemType : String, strength : Int) {
             else -> tempText = "error"
         }
         var finalText = itemName + "\n" + tempText + itemStrength
-
-
 
         return finalText
     }

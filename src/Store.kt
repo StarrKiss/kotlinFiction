@@ -39,6 +39,7 @@ object Store{
         }
 
         fun getIinvList(): String{
+
                 var tempText = "Inventory Contents: " + "\n"
 
                 for( x in ArrayList(inventoryMap.values)){

@@ -48,10 +48,7 @@ class Section(tempText: String, commandArray : Array<Command>, itemAdded : Strin
                 println("Invalid enter.")
             }
 
-
         }
-
-
 
     }
 

@@ -33,19 +33,13 @@ object inventory{
                         Player.Heal(x.itemStrength)
                     }
                 }
+
                 break@loop
-
-
 
             }
         }
 
-
         Section(name, commandz).call()
-
-
-
-
 
     }
 }

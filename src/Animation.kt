@@ -7,7 +7,6 @@ class animation(frameLength : Int, framesArray : Array<String>){
         var outputString : String
         for(i in 0..framesOfAnim){
             outputString = frames[i]
-
         }
     }
 }

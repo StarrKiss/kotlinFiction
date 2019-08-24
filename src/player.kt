@@ -8,6 +8,7 @@ object Player{
     fun getPlayerName() : String{
 
         return name
+
     }
 
     fun setPlayerName(newName : String){
