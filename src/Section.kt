@@ -14,7 +14,10 @@ class Section(tempText: String, commandArray : Array<Command>, itemAdded : Strin
 
         if(itemkey != "null"){
             Store.addInvList(itemkey)
+
+            inventory.listPickedUp(itemkey)
         }
+
 
 
         println("Your health is " + Player.getPlayerHealth())

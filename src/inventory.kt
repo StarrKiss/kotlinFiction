@@ -42,4 +42,8 @@ object inventory{
         Section(name, commandz).call()
 
     }
+
+    fun listPickedUp(newKey : String){
+        println("You picked up " + Store.getInvItem(newKey).itemName)
+    }
 }
