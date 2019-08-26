@@ -1,7 +1,7 @@
-class item(name : String, itemType : String, strength : Int) {
+class item(name : String, itemType : String, strength : Int = 0) {
     var itemName : String  = name
 
-    var itemTypes : Array<String> = arrayOf("sword", "potion", "armor")
+    var itemTypes : Array<String> = arrayOf("miscItem", "potion")
 
     var itemStrength : Int = strength
 
@@ -11,13 +11,20 @@ class item(name : String, itemType : String, strength : Int) {
 
         var tempText : String = ""
 
+        var finalText : String = ""
+
         when(whatItem){
-            "sword" -> tempText = "Attack: "
+            "miscItem" -> tempText = ""
             "potion" -> tempText = "Health Gained: "
-            "armor" -> tempText = "Defense: "
             else -> tempText = "error"
         }
-        var finalText = itemName + "\n" + tempText + itemStrength
+        if(itemStrength != 0){
+            finalText = itemName + "\n" + tempText + itemStrength
+        }
+        else{
+            finalText = itemName + "\n" + tempText
+        }
+
 
         return finalText
     }

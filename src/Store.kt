@@ -18,8 +18,8 @@ object Store{
         )
 
         var inventoryMap = mutableMapOf(
-                "rustSword" to item("Rusty Sword", "sword", 3),
-                "basicArmor" to item ("Wooden Armor", "armor", 3),
+                "rustSword" to item("Golden Key", "miscItem"),
+                "basicArmor" to item ("Wooden Stick", "miscItem" ),
                 "healthPotion" to item("Health Potion", "potion", 50)
 
         )
@@ -27,7 +27,7 @@ object Store{
         val possibleInventory = mutableMapOf(
 
                 "potion2" to item("Powerful Health Potion", "potion", 90),
-                "powerSword" to item("Massive Broadsword", "sword", 10)
+                "powerSword" to item("Stone", "miscItem")
 
 
         )
