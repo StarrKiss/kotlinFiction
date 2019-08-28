@@ -25,7 +25,7 @@ class item(name : String, itemType : String, strength : Int = 0) {
             finalText = itemName + "\n" + tempText
         }
 
-
+		//this is a test
         return finalText
     }
 
