@@ -6,6 +6,7 @@ import Store
 import  animation
 
 fun main(){
+
     println("Welcome! What is your name? ")
 
     var tempInput = readLine()
