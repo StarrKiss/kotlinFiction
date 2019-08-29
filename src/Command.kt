@@ -24,6 +24,7 @@ class Command(commandText : String, destination : String, healthTaken : Int = 0,
             }
             else{
                 println(args.unableText)
+                Store.getItem(args.currentLocat).call()
             }
 
         }

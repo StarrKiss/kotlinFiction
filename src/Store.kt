@@ -14,7 +14,7 @@ object Store{
                 "text3" to Section("You find a key, small, lying in a clearing. Pillars of stone surround it.", arrayOf(Command("Go Back", "text1"), Command("Head to well", "text2")), "goldenKey"),
                 "text2" to Section("You come across a well", arrayOf(Command("Investigate", "text5", 100), Command("Go Back", "text1") ),"potion2" ),
                 "text5" to Section("You Drown", arrayOf()),
-                "gate" to Section("You find a locked, chain gate", arrayOf(Command("Investigate", "text6", 0, commandArgs("You try to break down the door, but it's locked", "goldenKey", false)), Command("Go Back", "text1"))),
+                "gate" to Section("You find a locked, chain gate", arrayOf(Command("Investigate", "text6", 0, commandArgs("You try to break down the door, but it's locked", "goldenKey", false, "gate")), Command("Go Back", "text1"))),
                 "text6" to Section("There is nothing but grass.", arrayOf(Command("Go Back", "gate")))
 
         )
